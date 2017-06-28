@@ -1,0 +1,7 @@
+{
+  "name": "watermelon-qiniu",
+  "officialName": "watermelon-qiniu",
+  "version": "0.0.0",
+  "keywords": ["qiniu"],
+  "main": "main.js"
+}
