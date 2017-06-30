@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     upload (file, key, token) {
         let xhr = new XMLHttpRequest();
         // TODO: 支持使用不同的地址

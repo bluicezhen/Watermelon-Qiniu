@@ -2,7 +2,7 @@
   "name": "watermelon-qiniu",
   "officialName": "watermelon-qiniu",
   "description": "西瓜七牛 - 一个开发者友好的七牛云JS SDK",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["qiniu"],
   "homepage": "https://github.com/bluicezhen/Watermelon-Qiniu",
   "author": "Bluice Zhen <bluice.zhen@gmail.com> (http://www.zhen37.me)",
