@@ -2,13 +2,24 @@
   "name": "watermelon-qiniu",
   "officialName": "watermelon-qiniu",
   "description": "西瓜七牛 - 一个开发者友好的七牛云JS SDK",
-  "version": "0.0.2",
-  "keywords": ["qiniu"],
+  "version": "0.0.3",
+  "keywords": [
+    "qiniu"
+  ],
   "homepage": "https://github.com/bluicezhen/Watermelon-Qiniu",
   "author": "Bluice Zhen <bluice.zhen@gmail.com> (http://www.zhen37.me)",
   "bugs": {
     "url": "https://github.com/bluicezhen/Watermelon-Qiniu/issues"
   },
-  "main": "main.js",
-  "license": "MIT"
+  "main": "lib/main.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "scripts": {
+    "build": "babel src -d lib"
+  }
 }
