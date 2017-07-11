@@ -2,7 +2,7 @@ module.exports = {
     upload (file, key, token) {
         let xhr = new XMLHttpRequest();
         // TODO: 支持使用不同的地址
-        xhr.open('POST', 'http://up-z2.qiniu.com', true);
+        xhr.open('POST', '//up-z2.qiniu.com', true);
         let formData = new FormData();
         formData.append('token', token);
         formData.append('key', key);

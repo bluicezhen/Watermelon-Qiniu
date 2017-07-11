@@ -1,2 +1,5 @@
 # MacOS
 .idea/
+
+# Npm
+node_modules/
