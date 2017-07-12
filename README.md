@@ -27,7 +27,14 @@ npm i watermelon-qiniu
 
 ### 文件上传
 
-开发者需自己获取File对象以及Upload Key、Upload Token，关于File对象的获取，建议参考MDN（[https://developer.mozilla.org/zh-CN/docs/Web/API/File](https://developer.mozilla.org/zh-CN/docs/Web/API/File)）。下面是一个不完整的例子。例子中使用了async/await语法糖，不能使用该语法糖的同学知道函数返回了一个Promise对象就好了。
+开发者需自己获取File对象以及Upload Key、Upload Token，Upload Url关于File对象的获取，建议参考MDN（[https://developer.mozilla.org/zh-CN/docs/Web/API/File](https://developer.mozilla.org/zh-CN/docs/Web/API/File)）。下面是一个不完整的例子。例子中使用了async/await语法糖，不能使用该语法糖的同学知道函数返回了一个Promise对象就好了。
+
+> Upload Url的默认参数是 https://up-z2.qbox.me， 即华南地区的HTTPS
+> 关于Upload URL，七牛的官方文档语焉不详，但基本是这样的：
+> 华北（http://up-z1.qiniu.com | https://up-z1.qbox.me）
+> 华南（http://up-z2.qiniu.com | https://up-z2.qbox.me）
+> 北美（http://up-na0.qiniu.com | https://up-na0.qbox.me）
+> 如果无法符合，请自行解决☺
 
 ```javascript
 import qiniu from 'watermelon-qiniu';
@@ -45,3 +52,5 @@ async function upload (file, upload_key, upload_token) {
   }
 }
 ```
+        // TODO: 支持使用不同的地址
+      
